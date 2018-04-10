@@ -10,7 +10,6 @@
 #logo{
 	width: 20%;
 	max-width: 40%;
-	align-self: center;
 	padding: 10px;
 }
 
@@ -28,7 +27,7 @@ li{
 }
 
 li a{
-	display: block;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
