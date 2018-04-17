@@ -19,7 +19,7 @@
 }
 
 .header{
-	color: black;
+	color: #353839;
 	text-align: center;
 	font-size: 3.5em;
 }
@@ -27,6 +27,6 @@
 .text-box{
 	text-align: center;
 	font-size: 1em;
-	color: black;
+	color: #353839;
 	max-width: 55%;
 }
