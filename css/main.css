@@ -1,27 +1,33 @@
+
+
 .container-prev{
-		padding: 5px;
-		border 5px solid black;
+	padding: 5px;
+	border 5px solid black;
 		
 }
 
 #big-con{
-	width: 70%;
+width: 70%;
+	font-family: 'Open Sans', sans-serif;	
 	
 }
 
 #sm-con{
 	width: 30%;
+	font-family: 'Open Sans', sans-serif;	
 }
 
 
 .wide{
 	min-width=100%;	
+	font-family: 'Open Sans', sans-serif;	
 }
 
 .header{
 	color: #353839;
 	text-align: center;
 	font-size: 3.5em;
+	font-family: 'Open Sans', sans-serif;	
 }
 
 .text-box{
@@ -29,4 +35,5 @@
 	font-size: 1em;
 	color: #353839;
 	max-width: 55%;
+	font-family: 'Open Sans', sans-serif;	
 }
