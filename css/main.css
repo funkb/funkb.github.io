@@ -37,3 +37,15 @@ width: 70%;
 	max-width: 55%;
 	font-family: 'Open Sans', sans-serif;	
 }
+.about-list{
+	max-width: 60%;
+	text-align: left;
+	font-size: 1em;
+	color: #353839;
+	list-style-type: none;
+	
+}
+
+.about-list-item:hover{
+	color: #62686a;
+}
