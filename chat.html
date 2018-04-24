@@ -104,6 +104,9 @@
 					      // replace myFirebase.set(...); with the next line
 					      myFirebase.push({username:msgUser, text:msgText});
 					      textInput.value = "";
+						  
+						var objDiv = document.getElementById("results");
+						objDiv.scrollTop = objDiv.scrollHeight;
 					      
 					    });
 					  clearButton.addEventListener("click", function() {
@@ -124,7 +127,7 @@
 					var msgElement = document.createElement("div");
 					msgElement.appendChild(msgUsernameElement);
 					msgElement.appendChild(msgTextElement);
-					//msgElement.child(msgTextElement).className = "msg-text";
+					msgElement.child(msgTextElement).className = "msg-text";
 					
 					msgElement.className = "msg";
        						
