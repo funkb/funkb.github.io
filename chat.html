@@ -91,11 +91,11 @@
 					      //var msgUser = usernameInput.value;
 					      var msgUser = "Anonymous";
 					      var msgText = textInput.value;
-					      if(!msgText.equals("")){
+					      
 					      // replace myFirebase.set(...); with the next line
 					      myFirebase.push({username:msgUser, text:msgText});
 					      textInput.value = "";
-					      }
+					      
 					    });
 					  clearButton.addEventListener("click", function() {
 						  myFirebase.child().remove();
@@ -115,7 +115,7 @@
 					msgElement.appendChild(msgTextElement);
 					
 					msgElement.className = "msg";
-       					
+       						
 					      
 					document.getElementById("results").appendChild(msgElement);
 				      });
