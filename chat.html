@@ -59,7 +59,7 @@
 					#username, #text{
 						margin: 5px 0px;	
 					}
-					#post{
+					#post, #clear{
 						padding: 0.5em 1em;
 						background-color: #50b1ff;
 						border: none;
@@ -76,6 +76,7 @@
 					 
 					  <input id="text" type="text" placeholder="Message" class="chat-box-message"><br/>
 					  <button id="post" class="post">Post</button><br/>
+					  <button id="clear" class="post">Clear Data</button><br/>
 					  <div id="results"></div>
 					  <script>
 				   
@@ -83,7 +84,7 @@
 					  //var usernameInput = document.querySelector('#username');
 					  var textInput = document.querySelector('#text');
 					  var postButton = document.querySelector('#post');
-
+					  var clearButton = document.querySelector("#clear");
 					  postButton.addEventListener("click", function() {
 					      //var msgUser = usernameInput.value;
 					      var msgUser = "Anonymous";
@@ -92,7 +93,9 @@
 					      myFirebase.push({username:msgUser, text:msgText});
 					      textInput.value = "";
 					    });
-						  
+					  clearButton.addEventListener("click", function() {
+						  myFirebase.removeValue();
+					  });
 					var startListening = function() {
 				      myFirebase.on('child_added', function(snapshot) {
 					var msg = snapshot.val();
@@ -113,7 +116,7 @@
 					document.getElementById("results").appendChild(msgElement);
 				      });
 				    }
-
+				
 				    // Begin listening for data
 				    startListening();
 						  
