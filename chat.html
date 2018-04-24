@@ -75,9 +75,11 @@
 					
 					 
 					  <input id="text" type="text" placeholder="Message" class="chat-box-message"><br/>
-					  <button id="post" class="post">Post</button><br/>
-					  <button id="clear" class="post">Clear Data</button><br/>
-					  <div id="results"></div>
+					  <button id="post" class="post">Post</button>
+					  <br>
+					  <br>
+					  <button id="clear" class="post">Clear Data</button>
+					
 					  <script>
 				   
 					  var myFirebase = new Firebase('https://webchat-67d31.firebaseio.com');
@@ -113,7 +115,7 @@
 					msgElement.appendChild(msgTextElement);
 					
 					msgElement.className = "msg";
-       					document.getElementById("results").appendChild(msgElement);
+       					
 					      
 					document.getElementById("results").appendChild(msgElement);
 				      });
