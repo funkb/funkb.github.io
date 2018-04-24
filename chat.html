@@ -52,7 +52,7 @@
 					.msg{
 						margin: 10px 0;
 						padding: 10px;
-						padding-right: 100%;
+						padding-right: 50%;
 						width: 40%;
 						background-color: #efefef;
 						float: none;
@@ -104,6 +104,7 @@
 					    });
 					  clearButton.addEventListener("click", function() {
 						  myFirebase.remove();
+						  location.reload();
 					  });
 					var startListening = function() {
 				      myFirebase.on('child_added', function(snapshot) {
