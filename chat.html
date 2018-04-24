@@ -40,26 +40,29 @@
 					
 
 					</div>
-				</center>
-				  <input id="username" type="text" placeholder="Anonymous" text="Anonymous"><br/>
-				  <input id="text" type="text" placeholder="Message"><br/>
-				  <button id="post">Post</button><br/>
-				  <div id="results"></div>
-				  <script>
+					
+					 
+					  <input id="text" type="text" placeholder="Message"><br/>
+					  <button id="post">Post</button><br/>
+					  <div id="results"></div>
+					  <script>
 				   
 					  var myFirebase = new Firebase('https://webchat-67d31.firebaseio.com');
-					  var usernameInput = document.querySelector('#username');
+					  //var usernameInput = document.querySelector('#username');
 					  var textInput = document.querySelector('#text');
 					  var postButton = document.querySelector('#post');
 
 					  postButton.addEventListener("click", function() {
-					      var msgUser = usernameInput.value;
+					      //var msgUser = usernameInput.value;
+					      var msgUser = "Anonymous";
 					      var msgText = textInput.value;
 					      // replace myFirebase.set(...); with the next line
 					      myFirebase.push({username:msgUser, text:msgText});
 					      textInput.value = "";
 					    });
 				  </script>
+				</center>
+				 
 			</div>
 		
 			
