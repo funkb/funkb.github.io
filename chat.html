@@ -98,7 +98,7 @@
 					      }
 					    });
 					  clearButton.addEventListener("click", function() {
-						  myFirebase.removeValue();
+						  myFirebase.remove();
 					  });
 					var startListening = function() {
 				      myFirebase.on('child_added', function(snapshot) {
