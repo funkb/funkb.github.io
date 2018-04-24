@@ -108,6 +108,7 @@
 					    });
 					  clearButton.addEventListener("click", function() {
 						  myFirebase.remove();
+						  myFirebase = new Firebase('https://webchat-67d31.firebaseio.com');
 						  window.location.reload();
 					  });
 					var startListening = function() {
