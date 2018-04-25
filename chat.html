@@ -105,8 +105,7 @@
 					      myFirebase.push({username:msgUser, text:msgText});
 					      textInput.value = "";
 						  
-						var objDiv = document.getElementById("results");
-						objDiv.scrollTop = objDiv.scrollHeight;
+						
 					      
 					    });
 					  clearButton.addEventListener("click", function() {
@@ -133,6 +132,9 @@
        						
 					      
 					document.getElementById("results").appendChild(msgElement);
+					      
+					var objDiv = document.getElementById("results");
+					objDiv.scrollTop = objDiv.scrollHeight;
 				      });
 				    }
 				
