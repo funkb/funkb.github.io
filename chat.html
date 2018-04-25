@@ -101,7 +101,7 @@
 					      //var msgUser = usernameInput.value;
 					      var msgUser = "Anonymous";
 					      var msgText = textInput.value;
-					      if(msgText == null || msgText == ""){
+					      if(msgText.trim() == null || msgText.trim() == ""){
 						window.alert("You need to type some text in order to post!");      
 					      }else{
 					      // replace myFirebase.set(...); with the next line
