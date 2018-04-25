@@ -100,8 +100,8 @@
 					  postButton.addEventListener("click", function() {
 					      //var msgUser = usernameInput.value;
 					      var msgUser = "Anonymous";
-					      var msgText = textInput.value;
-					      if(msgText.trim() == null || msgText.trim() == ""){
+					      var msgText = textInput.value.trim();
+					      if(msgText == null || msgText == ""){
 						window.alert("You need to type some text in order to post!");  
 						textInput.value = "";
 					      }else{
