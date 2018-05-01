@@ -110,16 +110,19 @@
 						canPost=false;
 					      }
 					 var words = msgText.split(" ");
-					   for(var word in words){
-						for(var badWord in notAllowed){
-					    if(word.includes(badWord) ){
-						  canPost = false;
-						  window.alert("Vulgarities aren't allowed!");  
-						  textInput.value = "";
-						}
-						}
-					 }
-						  
+					   words.forEach(function(word){
+						notAllowed.forEach(function(badWord) {
+							if(word.includes(badWord)){
+								canPost = false;
+								window.alert("Vulgarities aren't allowed!");  
+						  		textInput.value = "";
+							}
+						});
+						   
+					   });
+						 
+					 
+						 
 					      // replace myFirebase.set(...); with the next line
 						 if(canPost){
 						      myFirebase.push({username:msgUser, text:msgText});
