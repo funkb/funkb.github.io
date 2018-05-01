@@ -111,7 +111,7 @@
 					      }
 					 var words = msgText.split(" ");
 					   for(var word in words){
-					    if(notAllowed.includes(word) ){
+					    if(word in notAllowed ){
 						  canPost = false;
 						  window.alert("Vulgarities aren't allowed!");  
 						  textInput.value = "";
