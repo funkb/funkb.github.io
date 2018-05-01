@@ -111,10 +111,12 @@
 					      }
 					 var words = msgText.split(" ");
 					   for(var word in words){
-					    if(word in notAllowed ){
+						for(var badWord in notAllowed){
+					    if(word.includes(badWord) ){
 						  canPost = false;
 						  window.alert("Vulgarities aren't allowed!");  
 						  textInput.value = "";
+						}
 						}
 					 }
 						  
