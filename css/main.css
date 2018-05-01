@@ -64,6 +64,7 @@ font-family: 'Black Han Sans', sans-serif;
 	border: 1px solid #e2e2e2;
 	border-radius: 10px;
 	white-space: nowrap;
+	padding: 20px;
 }
 .header-element{
 	text-align: center;
