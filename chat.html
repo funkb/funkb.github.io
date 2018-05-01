@@ -93,7 +93,7 @@
 					  <script>
 				   
 					  var myFirebase = new Firebase('https://webchat-67d31.firebaseio.com');
-					  var notAllowed= ["kill yourself", "kill", "your", "self"];
+					  var notAllowed= ["kill yourself", "kill"];
 						  
 					  //var usernameInput = document.querySelector('#username');
 					  var textInput = document.querySelector('#text');
@@ -111,11 +111,11 @@
 					      }
 					 var words = msgText.split(" ");
 					   for(var word in words){
-					    if(word in notAllowed){
+					    if(notAllowed.includes(word) ){
 						  canPost = false;
 						  window.alert("Vulgarities aren't allowed!");  
 						  textInput.value = "";
-					}
+						}
 					 }
 						  
 					      // replace myFirebase.set(...); with the next line
