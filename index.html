@@ -1,134 +1,117 @@
+
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Project Onism</title>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/index.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/index-mobile.css" type="text/css" media="handheld" />
-	  <!--  FAVICON  -->
-	  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	  <!-- END FAVICON -->
-  </head>
-  
-  <body>
-   <div class="header">
-      <div class="nav-bar">
-        <ul class="nav">
-            <li class="nav-element"><a href="#Mail">Mail</a></li>
-            <li class="nav-element"><a href="#News">News</a></li>
-            <li class="nav-element"><a href="#Blog">Blog</a></li>
-            <li class="nav-element"><a href="#Store">Store</a></li>
-        </ul>
+   <head>
+      <title>Project Onism</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/index.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/index-mobile.css" type="text/css" media="handheld" />
+      <!--  FAVICON  -->
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <!-- END FAVICON -->
+   </head>
+   <body>
+      <div class="screen" >
+         <div class="header">
+            <div class="nav-bar">
+               <ul class="nav">
+                  <li class="nav-element"><a href="#Mail">Mail</a></li>
+                  <li class="nav-element"><a href="#News">News</a></li>
+                  <li class="nav-element"><a href="#Blog">Blog</a></li>
+                  <li class="nav-element"><a href="#Store">Store</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="main-cap">
+            <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Game%20Logo%20Stage%201_down.png" alt="Project Onism" id="logo_image" />
+            <div class="teaser">
+               <ul class="tease">
+                  <li class="text">Tired, bright lights everywhere, everything is fuzzy.</li>
+                  <li class="text">Everything is spinning.</li>
+                  <li class="text">I'm floating, but then, stillness.</li>
+                  <li class="text">My mind begins to wander, just...out...of...reach...</li>
+               </ul>
+            </div>
+         </div>
+         <div class="image-viewer">
+            <div class="mySlides">
+               <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen1.jpg" class="image">
+            </div>
+            <div class="mySlides">
+               <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen2.jpg" class="image">
+            </div>
+            <div class="mySlides">
+               <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen3.jpg" class="image">
+            </div>
+            <button class="button d-left black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button d-right black"  onclick="plusDivs(1)">&#10095;</button>
+         </div>
+         <div class="footer">
+            <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/RenegamesLogo_white.png" id="foot-logo"/>
+         </div>
       </div>
-      
-    </div>
-		
-		<div class="header-mobile">
-			<button class="button-mobile" onclick="openMenu()">&#10094;</button>
-			<div class="menu-mobile">
-				
-			</div>
-		</div>
-    
-    <div class="main-cap">
-      <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Game%20Logo%20Stage%201_down.png" alt="Project Onism" id="logo_image" />
-      <div class="teaser">
-          <ul class="tease">
-              <li class="text">Tired, bright lights everywhere, everything is fuzzy.</li>
-              <li class="text">Everything is spinning.</li>
-              <li class="text">I'm floating, but then, stillness.</li>
-              <li class="text">My mind begins to wander, just...out...of...reach...</li>
-              
-          </ul>
+      <div class="mobile">
+         <div class="header-mobile">
+            <button class="button-mobile" onclick="openMenu()">&#10094;</button>
+            <div class="menu-mobile">
+            </div>
+         </div>
       </div>
-    </div>
-    
-    <div class="image-viewer">
-        <div class="mySlides">
-          <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen1.jpg" class="image">
-        </div>
-        
-        <div class="mySlides">
-          <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen2.jpg" class="image">
-        </div>
-        <div class="mySlides">
-          <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/screen3.jpg" class="image">
-        </div>
-        
-        
-        <button class="button d-left black" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="button d-right black"  onclick="plusDivs(1)">&#10095;</button>
-        
-    </div>
-    
-    <div class="footer">
-        <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/RenegamesLogo_white.png" id="foot-logo"/>
-    </div>
-    
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-    	if(typeof window.orientation !== 'undefined'){
-    		document.getElementsByClassName("header").style.display="block";
-    		document.getElementsByClassName("header-mobile").style.display="none";
-    	}else{
-    		document.getElementsByClassName("header").style.display="none";
-    		document.getElementsByClassName("header-mobile").style.display="block";
-    	}
-    	
-		document.getElementById('logo_image').style.padding-top = document.getElementsByClassName('header').clientHeight;	
-		document.alert(document.getElementsByClassName('header').clientHeight);
-			
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-              
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-			
-			function openMenu(){
-				var menu = document.getElementsByClassName("menu-mobile");
-				var button = document.getElementsByClassName("button-mobile");
-				button.style.display="none";
-				menu.style.display="block";
-			}
-			function closeMenu(){
-				var menu = document.getElementsByClassName("menu-mobile");
-				var button = document.getElementsByClassName("button-mobile");
-				button.style.display="block";
-				menu.style.display="none";
-			}
-        
-    </script>
-
-  </body>
+      <script>
+         var slideIndex = 1;
+         showDivs(slideIndex);
+         if(typeof window.orientation !== 'undefined'){
+         document.getElementsByClassName("screen").style.display="block";
+         document.getElementsByClassName("mobile").style.display="none";
+         }else{
+         document.getElementsByClassName("screen").style.display="none";
+         document.getElementsByClassName("mobile").style.display="block";
+         }
+         
+         function plusDivs(n) {
+           showDivs(slideIndex += n);
+         }
+         
+         function showDivs(n) {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           
+           if (n > x.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+               
+           }
+           x[slideIndex-1].style.display = "block";  
+         }
+         
+         function openMenu(){
+         document.getElementsByClassName("menu-mobile").display="block";
+         document.getElementsByClassName("button-mobile").style.display="none";	
+         }
+         function closeMenu(){
+         document.getElementsByClassName("menu-mobile").style.display="none";
+         document.getElementsByClassName("button-mobile").style.display="block";
+         }
+         
+      </script>
+   </body>
 </html>
-
-
 
