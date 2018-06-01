@@ -79,30 +79,28 @@
 					showDivs(slideIndex);
 					if (typeof window.orientation !== 'undefined') {
 							/* If on mobile*/
-							var screen = document.getElementById("screen");
-							screen.style.display = "none";
-							for (var i = 0; i < screen.childNodes.length; i++) {
-									screen.childNodes[i].style.display = "none";
-							}
-							var mob = document.getElementById("mobile");
-							mob.style.display = "block";
-							for (var i = 0; i < mob.childNodes.length; i++) {
-									mob.childNodes[i].style.display = "block";
-							}
+							hideChildren("screen");
+							showChildren("mobile");
 					} else {
 							/*desktop*/
-							var screen = document.getElementById("screen");
-							screen.style.display = "block"
-							for (var i = 0; i < screen.childNodes.length; i++) {
-									screen.childNodes[i].style.display = "block";
-							}
-							var mob = document.getElementById("mobile");
-							mob.style.display = "none"
-							for (var i = 0; i < mob.childNodes.length; i++) {
-									mob.childNodes[i].style.display = "none";
+							showChildren("screen");
+							hideChildren("mobile");
+					}
+					function hideChildren(idName){
+						var temp = document.getElementById(idName);
+						temp.style.display = "none";
+						for (var i = 0; i < temp.childNodes.length; i++) {
+									temp.childNodes[i].style.display = "none";
 							}
 					}
-
+					function showChildren(idName){
+						var temp = document.getElementById(idName);
+						temp.style.display = "block";
+						for (var i = 0; i < temp.childNodes.length; i++) {
+									temp.childNodes[i].style.display = "block";
+							}
+					}
+				
 					function plusDivs(n) {
 							showDivs(slideIndex += n);
 					}
