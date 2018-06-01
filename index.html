@@ -91,12 +91,12 @@
 							}
 					} else {
 							/*desktop*/
-							var screen = document.getElementsByClassName("screen");
+							var screen = document.getElementById("screen");
 							screen.style.display = "block"
 							for (var i = 0; i < screen.childNodes.length; i++) {
 									screen.childNodes[i].style.display = "block";
 							}
-							var mob = document.getElementsByClassName("mobile");
+							var mob = document.getElementById("mobile");
 							mob.style.display = "none"
 							for (var i = 0; i < mob.childNodes.length; i++) {
 									mob.childNodes[i].style.display = "none";
