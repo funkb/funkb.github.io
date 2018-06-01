@@ -47,7 +47,7 @@ body{
 .nav-element a{
     display: block;
     color: #f2f2f2;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     padding: 10px;
     padding-top: 10px;
@@ -179,7 +179,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
     display: block;
     margin:auto;
 }
-
-
-
-
