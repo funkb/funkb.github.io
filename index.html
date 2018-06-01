@@ -28,7 +28,7 @@
       <!-- END FAVICON -->
    </head>
    <body>
-      <div class="screen" >
+      <div id="screen" >
          <div class="header">
             <div class="nav-bar">
                <ul class="nav">
@@ -67,7 +67,7 @@
             <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/RenegamesLogo_white.png" id="foot-logo"/>
          </div>
       </div>
-      <div class="mobile">
+      <div id="mobile">
          <div class="header-mobile">
             <button class="button-mobile" onclick="openMenu()">&#10094;</button>
             <div class="menu-mobile">
@@ -75,53 +75,64 @@
          </div>
       </div>
       <script>
-         var slideIndex = 1;
-         showDivs(slideIndex);
-         if(typeof window.orientation !== 'undefined'){
-         var screen = document.getElementsByClassName("screen").style.display="block";
-        for (var i = 0; i < screen.childNodes.length; i++) {
-            screen.childNodes[i].style.display = "block";     
-        }
-         var mob = document.getElementsByClassName("mobile").style.display="none";
-         for (var i = 0; i < mob.childNodes.length; i++) {
-            mob.childNodes[i].style.display = "none";     
-        }
-         }else{
-         var screen = document.getElementsByClassName("screen").style.display="none";
-         for (var i = 0; i < screen.childNodes.length; i++) {
-            screen.childNodes[i].style.display = "none";     
-        }
-         var mob = document.getElementsByClassName("mobile").style.display="block";
-         for (var i = 0; i < mob.childNodes.length; i++) {
-            mob.childNodes[i].style.display = "block";     
-        }
-         }
-         
-         function plusDivs(n) {
-           showDivs(slideIndex += n);
-         }
-         
-         function showDivs(n) {
-           var i;
-           var x = document.getElementsByClassName("mySlides");
-           
-           if (n > x.length) {slideIndex = 1}    
-           if (n < 1) {slideIndex = x.length}
-           for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-               
-           }
-           x[slideIndex-1].style.display = "block";  
-         }
-         
-         function openMenu(){
-         document.getElementsByClassName("menu-mobile").display="block";
-         document.getElementsByClassName("button-mobile").style.display="none";	
-         }
-         function closeMenu(){
-         document.getElementsByClassName("menu-mobile").style.display="none";
-         document.getElementsByClassName("button-mobile").style.display="block";
-         }
+          var slideIndex = 1;
+					showDivs(slideIndex);
+					if (typeof window.orientation !== 'undefined') {
+							/* If on mobile*/
+							var screen = document.getElementById("screen");
+							screen.style.display = "none";
+							for (var i = 0; i < screen.childNodes.length; i++) {
+									screen.childNodes[i].style.display = "none";
+							}
+							var mob = document.getElementById("mobile");
+							mob.style.display = "block";
+							for (var i = 0; i < mob.childNodes.length; i++) {
+									mob.childNodes[i].style.display = "block";
+							}
+					} else {
+							/*desktop*/
+							var screen = document.getElementsByClassName("screen");
+							screen.style.display = "block"
+							for (var i = 0; i < screen.childNodes.length; i++) {
+									screen.childNodes[i].style.display = "block";
+							}
+							var mob = document.getElementsByClassName("mobile");
+							mob.style.display = "none"
+							for (var i = 0; i < mob.childNodes.length; i++) {
+									mob.childNodes[i].style.display = "none";
+							}
+					}
+
+					function plusDivs(n) {
+							showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+
+							if (n > x.length) {
+									slideIndex = 1
+							}
+							if (n < 1) {
+									slideIndex = x.length
+							}
+							for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+
+							}
+							x[slideIndex - 1].style.display = "block";
+					}
+
+					function openMenu() {
+							document.getElementsByClassName("menu-mobile").display = "block";
+							document.getElementsByClassName("button-mobile").style.display = "none";
+					}
+
+					function closeMenu() {
+							document.getElementsByClassName("menu-mobile").style.display = "none";
+							document.getElementsByClassName("button-mobile").style.display = "block";
+					}
          
       </script>
    </body>
