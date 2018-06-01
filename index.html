@@ -78,11 +78,23 @@
          var slideIndex = 1;
          showDivs(slideIndex);
          if(typeof window.orientation !== 'undefined'){
-         document.getElementsByClassName("screen").style.display="block";
-         document.getElementsByClassName("mobile").style.display="none";
+         var screen = document.getElementsByClassName("screen").style.display="block";
+        for (var i = 0; i < screen.childNodes.length; i++) {
+            screen.childNodes[i].style.display = "block";     
+        }
+         var mob = document.getElementsByClassName("mobile").style.display="none";
+         for (var i = 0; i < mob.childNodes.length; i++) {
+            mob.childNodes[i].style.display = "none";     
+        }
          }else{
-         document.getElementsByClassName("screen").style.display="none";
-         document.getElementsByClassName("mobile").style.display="block";
+         var screen = document.getElementsByClassName("screen").style.display="none";
+         for (var i = 0; i < screen.childNodes.length; i++) {
+            screen.childNodes[i].style.display = "none";     
+        }
+         var mob = document.getElementsByClassName("mobile").style.display="block";
+         for (var i = 0; i < mob.childNodes.length; i++) {
+            mob.childNodes[i].style.display = "block";     
+        }
          }
          
          function plusDivs(n) {
