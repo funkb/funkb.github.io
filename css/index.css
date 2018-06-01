@@ -80,7 +80,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8023376a', e
   padding-top: 5em;
 }
 
-.teaser{
+.teaser{ /* container for teaser text */
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#677091+0,000000+100&0.5+0,0.5+100 */
 background: -moz-linear-gradient(top, rgba(103,112,145,0.7) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(103,112,145,0.7) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -90,8 +90,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
 }
 .tease{ /* Unordered List */
     list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+    
 }
 
 .text{ /* List Element */
@@ -102,6 +105,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
     color: #fff;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*width: 100%;*/
+
 }
 .imageViewer{ /* Image Container for slideshow */
     width: 65%;
@@ -116,7 +124,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    background-color: #fff;
 }
 .image{
     width: 100%;
@@ -126,6 +133,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
 .button{
     border:none;
     display:inline-block;
+    list-style-type: none;
     padding:8px 16px;
     vertical-align:middle;
     overflow:hidden;
