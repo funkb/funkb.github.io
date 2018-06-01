@@ -1,23 +1,24 @@
+@font-face { font-family: Bebas; src: url('https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/BEBAS.ttf'); } 
 body{
-  background: black url("https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Wood.jpg") no-repeat;
+  background: black url("https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Splash%20PageBG.jpg") repeat-x;
   background-size: 100%;
+  margin: 0;
   
    
 }
 .header{
-  min-height: 1em;
-  max-height: 3em;
-  height:3em;
+    font-family: Bebas;
+    font-size: 1.5em;
+    padding: 0;
   width: 100%;
-  background-color: #ffffff;
-  margin-left: 0px;
+  background-color: #23376a;
+  margin: 0;
   position: fixed;
-  margin-bottom: 30px;
   
 }
 
 .nav-bar{
-  max-width: 60%;
+    max-width: 60%;
   width: 60%;
   height: 100%;
   margin-left: auto;
@@ -25,22 +26,34 @@ body{
   background-color: #222;
 }
 .nav{
+    width: 100%;
   list-style-type: none;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding: 0;
+  float:left;
   
 }
+.nav-element{
+    float: left;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .nav-element a{
-  float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    max-width: 25%;
-    width: 25%;
-    height:75%;
-    max-height:100%;
-    margin: auto;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
     
+}
+.nav-element:hover{
+    background-color: #111;
 }
 .logo{
   max-width: 50%;
@@ -50,6 +63,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   background-color: #333
+  
 }
 #logo_image{
   min-width: 75%;
@@ -58,4 +72,5 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5em;
 }
