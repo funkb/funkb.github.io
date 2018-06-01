@@ -27,7 +27,7 @@
   </head>
   
   <body>
-    <div class="header">
+   <div class="header">
       <div class="nav-bar">
         <ul class="nav">
             <li class="nav-element"><a href="#Mail">Mail</a></li>
@@ -84,14 +84,16 @@
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
-	if(typeof window.orientation !== 'undefined'){
-		document.getElementsByClassName("header").style.display="block";
-		document.getElementsByClassName("header-mobile").style.display="none";
-	}else{
-		document.getElementsByClassName("header").style.display="none";
-		document.getElementsByClassName("header-mobile").style.display="block";
-	}
-			
+    	if(typeof window.orientation !== 'undefined'){
+    		document.getElementsByClassName("header").style.display="block";
+    		document.getElementsByClassName("header-mobile").style.display="none";
+    	}else{
+    		document.getElementsByClassName("header").style.display="none";
+    		document.getElementsByClassName("header-mobile").style.display="block";
+    	}
+    	
+		document.getElementById('logo_image').style.padding-top = document.getElementsByClassName('header').clientHeight;	
+		document.alert(document.getElementsByClassName('header').clientHeight);
 			
         function plusDivs(n) {
           showDivs(slideIndex += n);
