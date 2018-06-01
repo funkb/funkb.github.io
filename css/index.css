@@ -164,3 +164,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
     color:#fff!important;
     background-color:#000!important
 }
+
+
+.footer{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0;
+}
+#foot-logo{
+    width: 25%;
+    display: block;
+    margin:auto;
+}
+
+
+
+
