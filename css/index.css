@@ -11,6 +11,8 @@
      background-size: 100%;
      margin: 0;
 }
+/*******************/
+
  .header{
      font-family: Bebas;
      font-size: 1.5em;
@@ -58,6 +60,9 @@
  .nav-element:hover{
      background-color: #405187;
 }
+
+/*********/
+
  .main-cap{
      max-width: 50%;
      width: 50%;
@@ -83,6 +88,9 @@
      margin-right: auto;
      padding-top: 5vw;
 }
+
+
+/***************/
  .teaser{
     /* container for teaser text */
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#677091+0,000000+100&0.5+0,0.5+100 */
@@ -117,6 +125,8 @@
     /*width: 100%;
     */
 }
+
+/************/
  .imageViewer{
     /* Image Container for slideshow */
      width: 65%;
@@ -167,6 +177,9 @@
      color:#fff!important;
      background-color:#000!important 
 }
+
+/**************/
+
  .footer{
      width: 50%;
      margin-left:auto;
