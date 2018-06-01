@@ -98,8 +98,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', e
 .text{ /* List Element */
     font-family: Fashion;
     font-size: 1em;
+    font-size: 1.5vw;
     text-align: center;
     color: #fff;
     padding-top: 4px;
     padding-bottom: 4px;
+}
+.imageViewer{ /* Image Container for slideshow */
+    width: 65%;
+    max-width: 65%;
+    min-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative
+}
+.mySlides{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #fff;
+}
+.image{
+    width: 100%;
+    margin: 0;
+}
+
+.button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+  
+}
+.d-right{
+      position:fixed;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%)
+}
+.d-left{
+    position:fixed;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+.black{
+    color:#fff!important;
+    background-color:#000!important
 }
