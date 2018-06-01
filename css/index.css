@@ -1,4 +1,6 @@
 @font-face { font-family: Bebas; src: url('https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/BEBAS.ttf'); } 
+@font-face {
+    font-family: Fashion; src: url('https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Fashion%20Fetish%20Small%20Caps.ttf'); }
 body{
   background: black url("https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/Splash%20PageBG.jpg") repeat-x;
   background-size: 100%;
@@ -53,16 +55,20 @@ body{
     
 }
 .nav-element:hover{
-    background-color: #111;
+    background-color: #405187;
 }
-.logo{
+.main-cap{
   max-width: 50%;
   width: 50%;
-  height: 100%;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #333
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#23376a+0,ffffff+100&0.5+0,0.5+100 */
+background: -moz-linear-gradient(top, rgba(35,55,106,0.5) 0%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(35,55,106,0.5) 0%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(35,55,106,0.5) 0%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8023376a', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
   
 }
 #logo_image{
@@ -73,4 +79,27 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding-top: 5em;
+}
+
+.teaser{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#677091+0,000000+100&0.5+0,0.5+100 */
+background: -moz-linear-gradient(top, rgba(103,112,145,0.7) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(103,112,145,0.7) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(103,112,145,0.7) 0%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80677091', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+}
+.tease{ /* Unordered List */
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{ /* List Element */
+    font-family: Fashion;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
