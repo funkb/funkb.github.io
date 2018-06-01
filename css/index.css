@@ -72,12 +72,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8023376a', e
 }
 #logo_image{
   min-width: 75%;
-  max-width: 100%;
-  width: 100%;
+  max-width: 90%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5em;
+
 }
 
 .teaser{ /* container for teaser text */
