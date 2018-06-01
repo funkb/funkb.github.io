@@ -70,9 +70,9 @@
       <div id="mobile" style="display:block">
          <div class="header-mobile">
             <button class="button-mobile" onclick="openMenu()" id="mobile_button">
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
+                 <div class="bar"></div>
+                 <div class="bar"></div>
+                 <div class="bar"></div>
              </button>
             <div class="menu-mobile" id="mobile_menu">
                 <ul class="navbar-mobile">
@@ -92,6 +92,7 @@
 							/* If on mobile*/
 							hideChildren("screen");
 							showChildren("mobile");
+                            hideChildren("mobile_menu")
 					} else {
 							/*desktop*/
 							showChildren("screen");
