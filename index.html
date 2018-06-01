@@ -28,11 +28,11 @@
       <!-- END FAVICON -->
    </head>
    <body>
-      <div id="screen" >
+      <div id="screen" style="display: none;">
          <div class="header">
             <div class="nav-bar">
                <ul class="nav">
-                  <li class="nav-element"><a href="#Mail">Mail</a></li>
+                  <li class="nav-element"><a href="#Mail">Mail</a></li>a
                   <li class="nav-element"><a href="#News">News</a></li>
                   <li class="nav-element"><a href="#Blog">Blog</a></li>
                   <li class="nav-element"><a href="#Store">Store</a></li>
@@ -67,10 +67,21 @@
             <img src="https://raw.githubusercontent.com/funkb/funkb.github.io/master/img/RenegamesLogo_white.png" id="foot-logo"/>
          </div>
       </div>
-      <div id="mobile">
+      <div id="mobile" style="display:block">
          <div class="header-mobile">
-            <button class="button-mobile" onclick="openMenu()">&#10094;</button>
-            <div class="menu-mobile">
+            <button class="button-mobile" onclick="openMenu()" id="mobile_button">
+             <div class="bar"></div>
+             <div class="bar"></div>
+             <div class="bar"></div>
+             </button>
+            <div class="menu-mobile" id="mobile_menu">
+                <ul class="navbar-mobile">
+                    <li class="nav-mobile"><a href="#Mail" class="link-mobile">Mail</a></li>
+                    <li class="nav-mobile"><a href="#News" class="link-mobile">News</a></li>
+                    <li class="nav-mobile"><a href="#Blog" class="link-mobile">Blog</a></li>
+                    <li class="nav-mobile"><a href="#Store" class="link-mobile">Store</a></li>
+                    
+                </ul>
             </div>
          </div>
       </div>
@@ -125,13 +136,13 @@
 					}
 
 					function openMenu() {
-							document.getElementsByClassName("menu-mobile").display = "block";
-							document.getElementsByClassName("button-mobile").style.display = "none";
+							showChildren("mobile_menu");
+							hideChildren("mobile_button");
 					}
 
 					function closeMenu() {
-							document.getElementsByClassName("menu-mobile").style.display = "none";
-							document.getElementsByClassName("button-mobile").style.display = "block";
+							hideChildren("mobile_menu");
+							showChildren("mobile_button");
 					}
          
       </script>
